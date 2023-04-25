@@ -1,5 +1,5 @@
 # The Podcasterizer
-an overly-complicated bash script which uses a combination of [yt-dlp](https://github.com/yt-dlp/yt-dlp), [ffmpeg](https://ffmpeg.org/), [id3v2](https://id3v2.sourceforge.net/) and [curl](https://curl.se/) (along with some other stuff) to download and generate audio files for use with self-hosted podcast software like [dir2cast](https://github.com/ben-xo/dir2cast)
+an overly-complicated bash script which uses a combination of [yt-dlp](https://github.com/yt-dlp/yt-dlp), [ffmpeg](https://ffmpeg.org/), [id3v2](https://id3v2.sourceforge.net/) and [curl](https://curl.se/) (along with some other stuff) to convert online videos into audio files for use with self-hosted podcast software like [dir2cast](https://github.com/ben-xo/dir2cast)
 
 this bash script does the following:
 
@@ -21,14 +21,10 @@ this bash script does not:
 - feel pity or remorse or fear
 
 
-first version uploaded 16 april 2023, currently working with:
+this bash script is currently working alongside:
 - [dir2cast](https://github.com/ben-xo/dir2cast), a self-hosted podcast app
 - [Docker](https://www.docker.com/), a container manager
 - [this docker-compose.yml file](https://github.com/ben-xo/dir2cast/blob/main/docker-compose.yml) which Ben XO quite helpfully provides in the dir2cast code repo, which handles the dir2cast webserver and PHP stuff
 - a wee NUC running Debian 10 on my desk, which gives all of the above a place to live
-- my podcast app on my phone, which downloads new episodes of whatever the heck I end up seeing online which would work better as an mp3 file instead of a YT video (see [here](https://www.youtube.com/watch?v=OOxWQ9CF-y4) for a specific example and then let your imagination go wild with the possibilities of what else could be turned into a podcast... :musical_note:)
-
-
-*readme last updated 17 apr 2023 wb*
-
-
+- my podcast app on my phone, which downloads new podcast episodes whenever I'm at home on the LAN
+- whatever I see online which would work better as an mp3 file instead of an online video (see [here](https://www.youtube.com/watch?v=OOxWQ9CF-y4) for a specific example :musical_note:)
