@@ -1,0 +1,35 @@
+version: "2.3"
+
+### based on another docker-compose somewhere
+### don't want to look for it right now, will link it up another day
+### TODO: tweak the NGINX directory so it doesn't use docker-compose for its directory
+###
+
+# after "docker-compose up" try the following URLs as examples:
+# http://localhost:9982/
+
+services:
+    web:
+        image: nginx:alpine
+        container_name: dir2cast-web
+        ports:
+            - "9982:80"
+        volumes:
+            - .:/var/www/html
+            - ./docker-compose/nginx/default.conf:/etc/nginx/conf.d/default.conf
+        links:
+            - php-fpm
+        restart: unless-stopped
+
+    php-fpm:
+        image: php:7-fpm-alpine
+        container_name: dir2cast-php
+        volumes:
+            - .:/var/www/html
+            # You could also create a Dockerfile FROM php:7-fpm-alpine which includes these next two
+            - ./dir2cast.php:/dir2cast.php
+            - ./getID3:/getID3
+
+            # You should map a temp folder in otherwise you'll see errors about permission denied mkdir()
+            - /tmp:/temp
+        restart: unless-stopped
