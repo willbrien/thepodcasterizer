@@ -1,5 +1,5 @@
 # The Podcasterizer
-an overly-complicated bash script which uses a combination of [yt-dlp](https://github.com/yt-dlp/yt-dlp), [ffmpeg](https://ffmpeg.org/), [id3v2](https://id3v2.sourceforge.net/) and [curl](https://curl.se/) (along with some other stuff) to convert online videos into audio files for use with self-hosted podcast software like [dir2cast](https://github.com/ben-xo/dir2cast)
+a basic bash script which uses a combination of [yt-dlp](https://github.com/yt-dlp/yt-dlp), [ffmpeg](https://ffmpeg.org/), [id3v2](https://id3v2.sourceforge.net/) and [curl](https://curl.se/) (along with some other stuff) to convert online videos into audio files for use with self-hosted podcast software like [dir2cast](https://github.com/ben-xo/dir2cast)
 
 this bash script does the following:
 
