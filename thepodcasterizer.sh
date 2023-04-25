@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## The Podcasterizer 
-## an overly-complicated bash script which uses a combination of yt-dlp, ffmpeg, id3v2 and curl
+## a basic bash script which uses a combination of yt-dlp, ffmpeg, id3v2 and curl
 ## to download and generate audio files for use with self-hosted podcast software like dir2cast
 ## https://github.com/cameronfrye/thepodcasterizer
 
