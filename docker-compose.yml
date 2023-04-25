@@ -6,7 +6,7 @@ version: "2.3"
 ###
 
 # after "docker-compose up" try the following URLs as examples:
-# http://localhost:9982/
+# http://localhost:9982/ (URL may vary depending on your own IP, etc.)
 
 services:
     web:
